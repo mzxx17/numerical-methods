@@ -1,15 +1,21 @@
 def polyval(f, x):
+
     v = 0
+
     for i in range(len(f)):
         index = len(f) - 1 - i
         v += (f[i])*((x**(index)))
+
     return v
 
 def df(f, x, h = 1e-5):
+
     sp = 0
+
     for i in range(len(f)):
         index = len(f) - 1 - i
         sp += (f[i])*(((x+h)**(index)) - (x**(index)))
+        
     return (sp/(h))
 
 def bisection(f, a, b, d = 1e-6):
@@ -38,4 +44,3 @@ def bisection(f, a, b, d = 1e-6):
     else: 
         return "Phuong phap khong ap dung duoc"
 
-print(bisection([2, 2, -6], 0, 3))
