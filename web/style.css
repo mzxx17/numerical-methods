@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+.dosis-phong {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+:root
+{
+	--regular: dosis-phong;
+	--bgcolor: rgb(0, 0, 0, 0.5);
+	--sbgcolor: rgb(223, 224, 226);
+	--textcolor: rgb(0, 0, 0);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+header
+{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 1000;
+	height: 79px;
+}
+body
+{
+	background-color: rgb(223, 224, 226);
+}
+h4
+{
+	font-family: Oswald;
+	color: transparent;
+	-webkit-text-stroke: 1px black;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-size: 1.5rem;
+}
+.intro
+{
+	position: fixed;	
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+    background-color:black;
+	transition: 1s;
+}
+.logo-header
+{
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+    font-size: 300%;
+}
+
+.logo
+{
+	position: relative;
+	display: inline-block;
+	bottom: -20px;
+	opacity: 0;
+
+}
+.logo.active
+
+{
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+.logo.fade
+{
+	bottom: 150px;
+	opacity: 0;
+	transition:  ease-in-out 0.5s;
+}
+/*
+.background
+{
+    background-repeat: no-repeat;  
+  	background-attachment: fixed;  
+  	background-size: cover;
+	background-image: url('bg.jpg');
+  	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	top: 0;
+  	left: 0;
+  	z-index: -1;
+}
+*/
+.head
+{
+    color:aliceblue;
+}
+.navbar
+{
+	position: fixed;
+	width: 1500%;
+	top: 0;
+	left: 0;
+	padding: 1rem 62% 1rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar a
+{
+	text-decoration: none;
+	font-display: var(--regular);
+	font-family: var(--regular);
+	font-size: 1.1rem;
+	color: var(--textcolor);
+	margin-left: 2rem;
+	font-weight: 500;
+	z-index: 5;
+}
